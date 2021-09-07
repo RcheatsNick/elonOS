@@ -29,3 +29,9 @@ iso: mykernel.bin
 	grub-mkrescue --output=elonOS.iso iso
 	rm -rf iso
 	echo Succes
+push:
+	git add --all
+	git commit -m files
+	git push elonos --all
+	elonam
+	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
